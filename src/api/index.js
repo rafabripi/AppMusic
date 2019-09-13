@@ -1,6 +1,6 @@
 import config from "./config";
 const {apiKey} = config;
-const URLAPI = `http://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=:country&api_key=${apiKey}&format=json`;
+const URLAPI = `https://ws.audioscrobbler.com/2.0/?method=geo.gettopartists&country=:country&api_key=${apiKey}&format=json`;
 
 export default function getArtists(selectedCountry) {
     const URLCountry = URLAPI.replace(':country', selectedCountry)
